@@ -1,9 +1,9 @@
-import { Router } from 'express';
+const express = require('express');
 
 import sendEmailRoutes from './send.email.routes';
 
-const routes = Router();
+const routes = express.Router();
 
 routes.use('/send-email', sendEmailRoutes);
 
-export default routes;
+module.exports = routes;

@@ -1,5 +1,5 @@
-import nodemailer from 'nodemailer';
-import 'dotenv/config';
+const nodemailer = require('nodemailer');
+require('dotenv/config');
 
 class SendEmailController {
   async store(req, res) {
@@ -57,4 +57,4 @@ class SendEmailController {
   }
 }
 
-export default new SendEmailController();
+module.exports = new SendEmailController();

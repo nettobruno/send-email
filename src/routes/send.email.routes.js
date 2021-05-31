@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import SendEmailController from '../app/controllers/SendEmailController/index.js';
+const express = require('express');
+import SendEmailController from '../app/controllers/SendEmailController';
 
-const sendEmailRoutes = Router();
+const sendEmailRoutes = express.Router();
 
 sendEmailRoutes.post('/store', SendEmailController.store);
 
-export default sendEmailRoutes;
+module.exports = sendEmailRoutes;
