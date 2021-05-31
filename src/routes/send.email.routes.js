@@ -1,5 +1,5 @@
 const express = require('express');
-import SendEmailController from '../app/controllers/SendEmailController';
+const SendEmailController = require('../app/controllers/SendEmailController');
 
 const sendEmailRoutes = express.Router();
 

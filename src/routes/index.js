@@ -1,6 +1,6 @@
 const express = require('express');
 
-import sendEmailRoutes from './send.email.routes';
+const sendEmailRoutes = require('./send.email.routes');
 
 const routes = express.Router();
 
